@@ -24,8 +24,7 @@ const dataBelanjaan = [
 const listBelanjaan = (objekBelanja) => {
   let arrBelanja = [];
   for (let index = 0; index < objekBelanja.length; index++) {
-    // console.log("- " + dataBelanjaan[index].nama + " x " + dataBelanjaan[index].kuantitas);
-    arrBelanja.push("- " + objekBelanja[index].nama + " x " + dataBelanjaan[index].kuantitas);
+    arrBelanja.push("- " + objekBelanja[index].nama + " x " + objekBelanja[index].kuantitas);
   }
   return arrBelanja;
 };
