@@ -21,10 +21,13 @@ const dataBelanjaan = [
 ];
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
-const listBelanjaan = () => {
+let arrBelanja = [];
+const listBelanjaan = (objekBelanjar) => {
   for (let index = 0; index < dataBelanjaan.length; index++) {
-    console.log("- " + dataBelanjaan[index].nama + " x " + dataBelanjaan[index].kuantitas);
+    // console.log("- " + dataBelanjaan[index].nama + " x " + dataBelanjaan[index].kuantitas);
+    arrBelanja.push("- " + dataBelanjaan[index].nama + " x " + dataBelanjaan[index].kuantitas);
   }
+  return arrBelanja;
 };
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
